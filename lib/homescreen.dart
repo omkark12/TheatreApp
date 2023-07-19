@@ -2,20 +2,20 @@ import 'package:flutter/material.dart';
 
 class homescreen extends StatelessWidget {
   List movies = [
-    'Farzand'
-        'Pawankhind'
-        'Kakan'
-        'Shershivraj'
-        'RRR'
+    'Farzand',
+    'Pawankhind',
+    'Kakan',
+    'Shershivraj',
+    'RRR',
   ];
 
   List movies2 = [
-    'Farzand'
-        'Pawankhind'
-        'Kakan'
-        'Shershivraj'
-        'RRR'
-  ]
+    'Farzand',
+    'Pawankhind',
+    'Kakan',
+    'Shershivraj',
+    'RRR',
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -84,6 +84,25 @@ class homescreen extends StatelessWidget {
                                 'img/${movies[index]}.jpg',
                                 height: 280,
                               ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(left: 8),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  movies[index],
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 7,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                )
+                              ],
                             ),
                           )
                         ],
