@@ -5,7 +5,7 @@ class homescreen extends StatelessWidget {
     'Farzand',
     'Pawankhind',
     'Kakan',
-    'Shershivraj',
+    'Shershivraj1',
     'RRR',
   ];
 
@@ -229,14 +229,15 @@ class homescreen extends StatelessWidget {
                                 Row(
                                   children: [
                                     Icon(
-                                      Icons.star,
-                                      color: Colors.yellow,
+                                      Icons.thumb_up,
+                                      color: Colors.green,
+                                      size: 13,
                                     ),
                                     Text(
-                                      "5.0",
+                                      "235k",
                                       style: TextStyle(
-                                        color: Colors.yellow,
-                                        fontSize: 16,
+                                        color: Colors.white70,
+                                        fontSize: 15,
                                       ),
                                     )
                                   ],
@@ -247,7 +248,7 @@ class homescreen extends StatelessWidget {
                                 Row(
                                   children: [
                                     Icon(
-                                      Icons.access_time_rounded,
+                                      Icons.movie,
                                       color: Colors.white70,
                                       size: 12,
                                     ),
@@ -255,7 +256,7 @@ class homescreen extends StatelessWidget {
                                       width: 4,
                                     ),
                                     Text(
-                                      "3.00.00 hr",
+                                      "Indian",
                                       style: TextStyle(
                                           color: Colors.white, fontSize: 12),
                                     )
