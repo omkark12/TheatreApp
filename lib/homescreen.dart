@@ -10,11 +10,11 @@ class homescreen extends StatelessWidget {
   ];
 
   List movies2 = [
-    'Farzand',
-    'Pawankhind',
-    'Kakan',
-    'Shershivraj',
-    'RRR',
+    'Subhedar',
+    'Bahubali2',
+    'Maari',
+    'Kedarnath',
+    'Magadheera',
   ];
   @override
   Widget build(BuildContext context) {
@@ -57,7 +57,7 @@ class homescreen extends StatelessWidget {
                     child: Text(
                       'VIEW ALL',
                       style: TextStyle(
-                        color: Colors.orange.shade400,
+                        color: Colors.yellow,
                         fontSize: 17,
                         fontWeight: FontWeight.bold,
                       ),
@@ -98,9 +98,47 @@ class homescreen extends StatelessWidget {
                                   movies[index],
                                   style: TextStyle(
                                     color: Colors.white,
-                                    fontSize: 7,
+                                    fontSize: 17,
                                     fontWeight: FontWeight.bold,
                                   ),
+                                ),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.star,
+                                      color: Colors.yellow,
+                                    ),
+                                    Text(
+                                      "5.0",
+                                      style: TextStyle(
+                                        color: Colors.yellow,
+                                        fontSize: 16,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.access_time_rounded,
+                                      color: Colors.white70,
+                                      size: 12,
+                                    ),
+                                    SizedBox(
+                                      width: 4,
+                                    ),
+                                    Text(
+                                      "3.00.00 hr",
+                                      style: TextStyle(
+                                          color: Colors.white, fontSize: 12),
+                                    )
+                                  ],
                                 )
                               ],
                             ),
@@ -109,7 +147,128 @@ class homescreen extends StatelessWidget {
                       ));
                 },
               ),
-            )
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 15),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    padding: EdgeInsets.all(5),
+                    decoration: BoxDecoration(
+                      color: Colors.black12,
+                    ),
+                    child: Text(
+                      'COMING SOON',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        letterSpacing: 2,
+                      ),
+                    ),
+                  ),
+                  InkWell(
+                    onTap: () {},
+                    child: Text(
+                      "VIEW ALL ",
+                      style: TextStyle(
+                          color: Colors.yellow,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 15),
+                    ),
+                  )
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            SizedBox(
+              height: 390,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: 5,
+                itemBuilder: (context, index) {
+                  return Padding(
+                      padding: EdgeInsets.all(8),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          InkWell(
+                            onTap: () {},
+                            child: ClipRect(
+                              child: Image.asset(
+                                'img/${movies2[index]}.jpeg',
+                                height: 200,
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(left: 8),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  movies2[index],
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 17,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.star,
+                                      color: Colors.yellow,
+                                    ),
+                                    Text(
+                                      "5.0",
+                                      style: TextStyle(
+                                        color: Colors.yellow,
+                                        fontSize: 16,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.access_time_rounded,
+                                      color: Colors.white70,
+                                      size: 12,
+                                    ),
+                                    SizedBox(
+                                      width: 4,
+                                    ),
+                                    Text(
+                                      "3.00.00 hr",
+                                      style: TextStyle(
+                                          color: Colors.white, fontSize: 12),
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
+                          )
+                        ],
+                      ));
+                },
+              ),
+            ),
           ],
         ),
       ),
