@@ -16,6 +16,38 @@ class homescreen extends StatelessWidget {
     'Kedarnath',
     'Magadheera',
   ];
+
+  List m1time = [
+    '2.34.00 hr',
+    '3.05.08 hr',
+    '2.45.67 hr',
+    '2.50.00 hr',
+    '3.00.00 hr',
+  ];
+
+  List m1star = [
+    '4.5',
+    '5',
+    '5',
+    '4.9',
+    '4.8',
+  ];
+
+  List m2likes = [
+    '600k',
+    '10m',
+    '800k',
+    '689k',
+    '400k',
+  ];
+
+  List m2disc = [
+    'Marathi',
+    'Telugu',
+    'Telugu',
+    'Hindi',
+    'Telugu',
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -112,7 +144,7 @@ class homescreen extends StatelessWidget {
                                       color: Colors.yellow,
                                     ),
                                     Text(
-                                      "5.0",
+                                      m1star[index],
                                       style: TextStyle(
                                         color: Colors.yellow,
                                         fontSize: 16,
@@ -134,7 +166,7 @@ class homescreen extends StatelessWidget {
                                       width: 4,
                                     ),
                                     Text(
-                                      "3.00.00 hr",
+                                      m1time[index],
                                       style: TextStyle(
                                           color: Colors.white, fontSize: 12),
                                     )
@@ -204,6 +236,7 @@ class homescreen extends StatelessWidget {
                               child: Image.asset(
                                 'img/${movies2[index]}.jpeg',
                                 height: 200,
+                                fit: BoxFit.cover,
                               ),
                             ),
                           ),
@@ -234,7 +267,7 @@ class homescreen extends StatelessWidget {
                                       size: 13,
                                     ),
                                     Text(
-                                      "235k",
+                                      m2likes[index],
                                       style: TextStyle(
                                         color: Colors.white70,
                                         fontSize: 15,
@@ -256,7 +289,7 @@ class homescreen extends StatelessWidget {
                                       width: 4,
                                     ),
                                     Text(
-                                      "Indian",
+                                      m2disc[index],
                                       style: TextStyle(
                                           color: Colors.white, fontSize: 12),
                                     )
@@ -269,6 +302,33 @@ class homescreen extends StatelessWidget {
                       ));
                 },
               ),
+            ),
+            SizedBox(
+              height: 2,
+            ),
+            Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.location_on_sharp,
+                      color: Colors.white,
+                    ),
+                    Text(
+                      "PARVATI PUNE",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 15,
+                        fontStyle: FontStyle.italic,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 10,
             ),
           ],
         ),
