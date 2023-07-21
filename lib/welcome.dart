@@ -50,7 +50,7 @@ class welcomescreen extends StatelessWidget {
                 padding: EdgeInsets.symmetric(vertical: 15, horizontal: 15),
                 decoration: BoxDecoration(
                     border: Border.all(color: Colors.black, width: 2),
-                    color: Colors.orange.shade400,
+                    color: Colors.yellow,
                     borderRadius: BorderRadius.circular(10)),
                 child: Text(
                   "Less go",

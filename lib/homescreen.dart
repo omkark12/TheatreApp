@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:theatreapp/bookingscreen.dart';
+import 'package:theatreapp/comingsoon.dart';
 
 class homescreen extends StatelessWidget {
   List movies = [
@@ -110,7 +112,15 @@ class homescreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           InkWell(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => bookingscreen(
+                                      movie: movies[index],
+                                    ),
+                                  ));
+                            },
                             child: ClipRect(
                               child: Image.asset(
                                 'img/${movies[index]}.jpg',
@@ -231,7 +241,15 @@ class homescreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           InkWell(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => comingsoon(
+                                      movie: movies2[index],
+                                    ),
+                                  ));
+                            },
                             child: ClipRect(
                               child: Image.asset(
                                 'img/${movies2[index]}.jpeg',
