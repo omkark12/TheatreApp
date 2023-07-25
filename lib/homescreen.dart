@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:theatreapp/bookingscreen.dart';
+import 'package:theatreapp/bookscreen.dart';
 import 'package:theatreapp/comingsoon.dart';
 
 class homescreen extends StatelessWidget {
@@ -116,10 +117,8 @@ class homescreen extends StatelessWidget {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => bookingscreen(
-                                      movie: movies[index],
-                                    ),
-                                  ));
+                                      builder: (context) =>
+                                          bookscreen(movie: movies[index])));
                             },
                             child: ClipRect(
                               child: Image.asset(
@@ -245,10 +244,8 @@ class homescreen extends StatelessWidget {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => comingsoon(
-                                      movie: movies2[index],
-                                    ),
-                                  ));
+                                      builder: (context) =>
+                                          comingsoon(movie1: movies2[index])));
                             },
                             child: ClipRect(
                               child: Image.asset(

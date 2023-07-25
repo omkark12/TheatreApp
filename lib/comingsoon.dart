@@ -1,14 +1,20 @@
 import 'package:flutter/material.dart';
 
 class comingsoon extends StatelessWidget {
-  String movie;
-  comingsoon({required this.movie});
-  List formats = [
-    '2D',
-    '3D',
-    '4DX',
-    'IMAX',
+  String movie1;
+
+  comingsoon({
+    required this.movie1,
+  });
+
+  List info = [
+    'omkarejrejrgg',
+    'gergregrgrgrger',
+    'rgrgrgggrgrgrgr',
+    'ggwecdvfdgfcdfghh',
+    'ferggrgg',
   ];
+
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -25,7 +31,7 @@ class comingsoon extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.transparent,
                 image: DecorationImage(
-                  image: AssetImage('img/${movie}.jpeg'),
+                  image: AssetImage('img/${movie1}.jpeg'),
                   //fit: BoxFit.cover,
                   //opacity: 0.6,
                 ),
@@ -59,39 +65,25 @@ class comingsoon extends StatelessWidget {
                             SizedBox(
                               width: 10,
                             ),
-                            Icon(
-                              Icons.thumb_up,
-                              color: Colors.white,
-                              size: 25,
-                            ),
                           ],
                         )
                       ],
                     ),
                   ),
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 10),
-                    child: Column(
-                      children: [
-                        Center(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.black,
-                            ),
-                            child: Text(
-                              'Subhedar revolves around the thrilling feat of a mighty warrior who sacrifices his life to build the victory pylon of Swarajya',
-                              style: TextStyle(
-                                color: Colors.white,
-                              ),
-                            ),
-                          ),
-                        )
-                      ],
-                    ),
-                  )
                 ],
               ),
-            )
+            ),
+            Container(
+              decoration: BoxDecoration(color: Colors.black12),
+              padding: EdgeInsets.all(10),
+              child: Text(
+                "info[index]",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 16,
+                ),
+              ),
+            ),
           ],
         ),
       ),

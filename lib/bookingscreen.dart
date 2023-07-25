@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class bookingscreen extends StatelessWidget {
+class bookscreen extends StatelessWidget {
   String movie;
-  bookingscreen({required this.movie});
+  bookscreen({required this.movie});
   List formats = [
     '2D',
     '3D',
@@ -71,7 +71,7 @@ class bookingscreen extends StatelessWidget {
                   ),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),
