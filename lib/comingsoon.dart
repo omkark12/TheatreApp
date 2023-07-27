@@ -73,16 +73,57 @@ class comingsoon extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
-              decoration: BoxDecoration(color: Colors.black12),
-              padding: EdgeInsets.all(10),
-              child: Text(
-                "info[index]",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 16,
-                ),
+            SizedBox(
+              height: 10,
+            ),
+            Padding(
+              padding: EdgeInsets.all(8),
+              child: Column(
+                children: [
+                  Text(
+                    movie1,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  )
+                ],
               ),
+            ),
+            SizedBox(
+              width: 40,
+            ),
+            Row(
+              children: [
+                Icon(
+                  Icons.movie,
+                  color: Colors.green,
+                  size: 20,
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Text(
+                  "INDIAN",
+                  style: TextStyle(
+                    color: Colors.white70,
+                    fontSize: 15,
+                  ),
+                )
+              ],
+            ),
+            SizedBox(
+              height: 5,
+            ),
+            Text(
+              "By using the setState method, the code ensures that changes to the state are correctly propagated to the UI, and the UI is rebuilt with the updated values whenever necessary. This is a basic form of state management in Flutter. For more complex applications, you might consider using other state management solutions like Provider, Bloc, Redux, or Riverpod, depending on your project's requirements",
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+              ),
+              textAlign: TextAlign.justify,
             ),
           ],
         ),
